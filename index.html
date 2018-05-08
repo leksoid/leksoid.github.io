@@ -5,9 +5,38 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My First Portfolio</title>
+    <link href="main-styles.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 	<header>
-		<h1>Hello World!</h1>
+		<img id="logo" src="images/me.jpg" alt="author">
+		<p class="header-text">Aliaksei Taran<br />Front-End Newbie</p>
 	</header>
+	<main>
+		<section>
+			<h2>About myself</h2>			
+			<p>Hello there! My name is Aliaksei. And this is my portfolio website. I will be updating it while studying the Front-End Web Development Nanodegree at awesome <a href="https://www.udacity.com" target="_blank">Udacity</a>! Currently I am working as a QA Engineer - so hopefully my projects are going to be <s>bug-free</s> with as less bugs as possible. I live in lovely Dobbs Ferry, NY with my beautiful wife, our little baby-girl and a frenchie bulldog. I love learning, reading, hiking and enjoying the life. Oh, and i like to take pictures, check the one i did - it was a foggy day on the Hudson River, shot from Tarrytown side.</p>
+			<img id="bridge" src="images/tappan_zee.jpg" alt="Tappan Zee bridge">
+		</section>
+		<section>
+			<h2>Featured work</h2>
+			<div id="featured" class="featured-container">
+				<div id="project1" class="featured-box">
+					<div class="content">
+						<p><a href="https://codepen.io/lekso/pen/jZeVNJ">Pixel Art Maker</a></p>
+					</div>
+				</div>
+				<div id="project2" class="featured-box">
+					<div class="content">
+						<p><a href="https://codepen.io/lekso/pen/ZvwvqW">Animal Card</a></p>
+					</div>
+				</div>
+				<div id="project3" class="featured-box"></div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<span>This is the footer</span>
+	</footer>
 </body>
