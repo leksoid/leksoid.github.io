@@ -1,57 +1,57 @@
 body, html {
-	height:100%;
+	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 }
 
 .header-inner {
-	width:100%;
-	border-bottom:1px solid #7d97ad;
+	width: 100%;
+	border-bottom: 1px solid #7d97ad;
 	overflow: auto;
-	background-color:#7d97ad;
+	background-color: #7d97ad;
 }
 
 #author-picture {
-	float:left;
-	border:1px solid #2d3c49;
+	float: left;
+	border: 1px solid #2d3c49;
 }
 
 .header-text {
 	color: #fff;
 	text-align: right;
-	padding-right:5px;
+	padding-right: 5px;
 }
 
 main {
-	width:100%;
+	width: 100%;
 }
 
 #bridge-image {
-	width:100%;
+	width: 100%;
 }
 
 .featured-container {
-	display:flex;
-	flex-wrap:wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #project1 {
 	background-image: url(images/pixel-art-maker.png);
 	background-size: cover;
-	border:2px solid #2d3c49;
-	position:relative;
+	border: 2px solid #2d3c49;
+	position: relative;
 }
 
 #project2 {
 	background-image: url(images/animal-card.png);
 	background-size: cover;
-	border:2px solid #2d3c49;
-	position:relative;
+	border: 2px solid #2d3c49;
+	position: relative;
 }
 
 #project3 {
 	background-color: #02b3e4;
-	border:2px solid #2d3c49;
-	position:relative;
+	border: 2px solid #2d3c49;
+	position: relative;
 	color: white;
 }
 
@@ -60,7 +60,7 @@ main {
 }
 
 .box {
-	width:33%;
+	width: 33%;
 }
 
 .featured-box a {
@@ -78,7 +78,7 @@ main {
 }
 
 footer {
-	width:100%;
+	width: 100%;
 	border-top: 1px solid #7d97ad;
 	height: auto;
 	display: flex;
@@ -86,21 +86,21 @@ footer {
 
 .footer-text {
 	margin-top: 10px;
-	width:100%;
+	width: 100%;
 }
 
 .footer-social {
 	padding-top: 5px;
 	padding-bottom: 5px;
-	height:32px;
-	width:32px;
+	height: 32px;
+	width: 32px;
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width: 1025px) {
 	body {
-		width:1000px;
-		margin-left:auto;
-		margin-right:auto;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	.header-text {
@@ -109,63 +109,63 @@ footer {
 	}
 
 	.featured-container {
-		display:flex;
+		display: flex;
 		flex-wrap: nowrap;
 		height: 200px;
 		margin-bottom: 10px;
 	}
 
 	#project2 {
-		margin-right:10px;
-		margin-left:10px;
+		margin-right: 10px;
+		margin-left: 10px;
 	}
 }
 
-@media screen and (min-width:601px) and (max-width:1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
 	.header-text {
 		font-size: 24px;
 		padding-right: 10px;
 	}
 
 	.featured-container {
-		display:flex;
+		display: flex;
 		flex-wrap: nowrap;
 		height: 200px;
 		margin-bottom: 10px;
 	}
 
 	#project2 {
-		margin-right:10px;
-		margin-left:10px;
+		margin-right: 10px;
+		margin-left: 10px;
 	}
 
 	.footer-text {
-		width:100%;
+		width: 100%;
 	}
 
 	.footer-social {
-		height:32px;
-		width:32px;
+		height: 32px;
+		width: 32px;
 	}
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
 	
 	body {
-		margin:8px;
+		margin: 8px;
 	}
 
 	#author-picture {
-		height:80px;
+		height: 80px;
 	} 
 
 	.featured-container {
-		height:600px;
+		height: 600px;
 	}
 
 	.box {
-		width:100%;
-		height:32%;
+		width: 100%;
+		height: 32%;
 	}
 
 	.featured-box {
