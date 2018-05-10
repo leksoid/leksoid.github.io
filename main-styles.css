@@ -3,22 +3,30 @@ body, html {
 	font-family: 'Open Sans', sans-serif;
 }
 
-header {
+.header-inner {
 	width:100%;
-	border-bottom:1px solid #A0A0A0FF;
+	border-bottom:1px solid #7d97ad;
 	overflow: auto;
 	background-color:#7d97ad;
+}
+
+#author-picture {
+	float:left;
+	border:1px solid #2d3c49;
+}
+
+.header-text {
+	color: #fff;
+	text-align: right;
+	padding-right:5px;
 }
 
 main {
 	width:100%;
 }
 
-footer {
+#bridge-image {
 	width:100%;
-	border-top: 1px solid #A0A0A0FF;
-	height: auto;
-    display: flex;
 }
 
 .featured-container {
@@ -26,19 +34,52 @@ footer {
 	flex-wrap:wrap;
 }
 
-.header-text {
-	color:white;
-	text-align: right;
-	padding-right:5px; 
+#project1 {
+	background-image: url(images/pixel-art-maker.png);
+	background-size: cover;
+	border:2px solid #2d3c49;
+	position:relative;
 }
 
-#logo {
-	float:left;
-	border:1px solid #2d3c49;
-} 
+#project2 {
+	background-image: url(images/animal-card.png);
+	background-size: cover;
+	border:2px solid #2d3c49;
+	position:relative;
+}
 
-#bridge {
+#project3 {
+	background-color: #02b3e4;
+	border:2px solid #2d3c49;
+    position:relative;
+    color: white;
+}
+
+.featured-box {
+	width: 100%;
+}
+.box {
+	width:33%;
+}
+.featured-box a {
+	color: white;
+}
+
+.featured-box {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: #2d3c49;
+	opacity: 0.9;
+}
+
+footer {
 	width:100%;
+	border-top: 1px solid #A0A0A0FF;
+	height: auto;
+	display: flex;
 }
 
 .footer-text {
@@ -47,9 +88,9 @@ footer {
 }
 
 .footer-social {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    height:32px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height:32px;
 	width:32px;
 }
 
@@ -59,7 +100,7 @@ Responsive styles
 
 @media screen and (min-width:1025px) {
 	body {
-		width:1024px;
+		width:1000px;
 		margin-left:auto;
 		margin-right:auto;
 	}
@@ -76,72 +117,11 @@ Responsive styles
     	margin-bottom: 10px;
 	}
 
-	.featured-box {
-	    width: 100%;
-		
-	}
-
-	#project1 {
-		background-image: url(images/pixel-art-maker.png);
-    	background-size: cover;
-    	border:2px solid #2d3c49;
-    	position:relative;
-	}
-
 	#project2 {
-		background-image: url(images/animal-card.png);
-    	background-size: cover;
-    	border:2px solid #2d3c49;
-    	position:relative;
-    	margin-right:10px;
-	    margin-left:10px;
-	}
-
-	#project3 {
-		background-color: #02b3e4;
-		border:2px solid #2d3c49;
-    	position:relative;
-    	color: white;
-
-	}
-
-	#project1 .featured-box {
-		position: absolute;
-		text-align: center;
-	    bottom: 0;
-	    right: 0;
-	    left: 0;
-	    background: #2d3c49;
-	    opacity: 0.9;
-	}
-
-	#project2 .featured-box {
-		position: absolute;
-		text-align: center;
-	    bottom: 0;
-	    right: 0;
-	    left: 0;
-	    background: #2d3c49;
-	    opacity: 0.9;
-	}
-
-	#project3 .featured-box {
-		position: absolute;
-		text-align: center;
-	    bottom: 0;
-	    right: 0;
-	    left: 0;
-	    background: #2d3c49;
-	    opacity: 0.9;
-	}
-
-	.featured-box a {
-
-		color: inherit;
-		color: white;
+		margin-right:10px;
+		margin-left:10px;
 	}
 }
-
 
 @media screen and (min-width:601px) and (max-width:1024px) {
 	.header-text {
@@ -156,69 +136,9 @@ Responsive styles
     	margin-bottom: 10px;
 	}
 
-	.featured-box {
-	    width: 100%;
-		
-	}
-
-	#project1 {
-		background-image: url(images/pixel-art-maker.png);
-    	background-size: cover;
-    	border:2px solid #2d3c49;
-    	position:relative;
-	}
-
 	#project2 {
-		background-image: url(images/animal-card.png);
-    	background-size: cover;
-    	border:2px solid #2d3c49;
-    	position:relative;
-    	margin-right:10px;
-	    margin-left:10px;
-	}
-
-	#project3 {
-		background-color: #02b3e4;
-		border:2px solid #2d3c49;
-    	position:relative;
-    	color: white;
-
-	}
-
-	#project1 .featured-box {
-		position: absolute;
-		text-align: center;
-	    bottom: 0;
-	    right: 0;
-	    left: 0;
-	    background: #2d3c49;
-	    opacity: 0.9;
-	}
-
-	#project2 .featured-box {
-		position: absolute;
-		text-align: center;
-	    bottom: 0;
-	    right: 0;
-	    left: 0;
-	    background: #2d3c49;
-	    opacity: 0.9;
-	}
-
-	#project3 .featured-box {
-		position: absolute;
-		text-align: center;
-	    bottom: 0;
-	    right: 0;
-	    left: 0;
-	    background: #2d3c49;
-	    opacity: 0.9;
-	}
-
-	.featured-box a {
-
-		color: inherit;
-		color: white;
+		margin-right:10px;
+		margin-left:10px;
 	}
 
 	.footer-text {
@@ -232,6 +152,7 @@ Responsive styles
 }
 
 @media screen and (max-width:600px) {
+	
 	body {
 		margin:8px;
 	}
@@ -240,9 +161,7 @@ Responsive styles
 		text-decoration: none;
 	}
 
-	
-
-	#logo {
+	#author-picture {
 		height:80px;
 	} 
 
@@ -250,68 +169,13 @@ Responsive styles
 		height:600px;
 	}
 
+	.box {
+		width:100%;
+		height:32%;
+	}
+
 	.featured-box {
 		width: 100%;
 	    height: 30%;
-	    background-color: black;
-	}
-
-	#project1 {
-		background-image: url(images/pixel-art-maker.png);
-    	background-size: cover;
-    	border:2px solid #2d3c49;
-    	position:relative;
-	}
-
-	#project2 {
-		background-image: url(images/animal-card.png);
-    	background-size: cover;
-    	border:2px solid #2d3c49;
-    	position:relative;
-	}
-
-	#project3 {
-		background-color: #02b3e4;
-		border:2px solid #2d3c49;
-    	position:relative;
-    	color: white;
-
-	}
-
-	#project1 .featured-box {
-		position: absolute;
-		text-align: center;
-	    bottom: 0;
-	    right: 0;
-	    left: 0;
-	    background: #2d3c49;
-	    opacity: 0.9;
-	}
-
-	#project2 .featured-box {
-		position: absolute;
-		text-align: center;
-	    bottom: 0;
-	    right: 0;
-	    left: 0;
-	    background: #2d3c49;
-	    opacity: 0.9;
-	}
-
-	#project3 .featured-box {
-		position: absolute;
-		text-align: center;
-	    bottom: 0;
-	    right: 0;
-	    left: 0;
-	    background: #2d3c49;
-	    opacity: 0.9;
-	}
-
-	.featured-box a {
-		height:32px;
-		width:32px;
-		color: inherit;
-		color: white;
 	}
 }
